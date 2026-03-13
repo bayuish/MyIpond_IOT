@@ -13,7 +13,10 @@ private:
     DallasTemperature sensors;
     int pin;
     
+    // Private methods
     String getTemperatureStatus(float celsius);
+    float readSingleTemperature(); // baca sekali
+    float readAverageTemperature(); // baca dengan averaging + trimming
 
 public:
     TemperatureSensor(int pin);

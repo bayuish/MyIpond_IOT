@@ -6,6 +6,7 @@
 struct PHData {
     float value;
     int adc;
+    float avgADC;
     float voltage;
     String status;  // "Asam", "Netral", "Basa"
 };
@@ -13,6 +14,7 @@ struct PHData {
 struct TurbidityData {
     float ntu;
     int adc;
+    float avgADC;
     float voltage;
     String status;  // "Jernih", "Keruh", "Sangat Keruh"
 };

@@ -11,7 +11,9 @@ private:
     float offset;
     float scale;
     
-    float readADC();
+    // Private methods
+    float readADC();               // membaca ADC dengan averaging + trim
+    float readSingleADC();         // membaca ADC sekali saja
     float convertToVoltage(int adc);
     float convertToNTU(int adc);
     String getTurbidityStatus(float ntu);

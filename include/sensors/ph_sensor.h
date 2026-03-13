@@ -12,7 +12,8 @@ private:
     float scale;
     
     // Private methods
-    float readADC();
+    float readADC();          // membaca ADC dengan averaging + trimming
+    float readSingleADC();    // membaca ADC sekali saja
     float convertToVoltage(int adc);
     float convertToPH(int adc);
     String getPHStatus(float ph);
